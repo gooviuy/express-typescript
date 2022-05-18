@@ -1,4 +1,4 @@
-import { DiaryEntry, newDiaryEntry, NonSensitiveInfoEntry } from "../types";
+import { DiaryEntry, NewDiaryEntry, NonSensitiveInfoEntry } from "../types";
 import diaryData from "./diary.json";
 
 //utilizamos asercion de tipos
@@ -28,7 +28,7 @@ export const getEntresWithoutSenstiveInfo = (): NonSensitiveInfoEntry[] => {
   });
 };
 
-export const addDiary = (newDiaryEntry: newDiaryEntry) => {
+export const addDiary = (newDiaryEntry: NewDiaryEntry) => {
   const newDiary = {
     id: Math.max(...diaries.map((d) => d.id)) + 1,
     ...newDiaryEntry,
