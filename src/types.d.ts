@@ -1,17 +1,4 @@
-export enum Weather {
-  Sunny = "sunny",
-  Rainy = "rainy",
-  Cloudy = "cloud",
-  Windy = "windy",
-  Stormy = "stormy",
-}
-
-export enum Visibility {
-  Great = "great",
-  Good = "good",
-  Ok = "ok",
-  Poor = "poor",
-}
+import { Weather, Visibility } from "./enumbs";
 
 export interface DiaryEntry {
   id: number;
