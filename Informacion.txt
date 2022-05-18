@@ -1,0 +1,14 @@
+ 1 : "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    Agregamos el script tsc para que se pueda transformar los ficheros de typescript a javascript
+    y asi se pueda leer correctament.
+
+2 : corremos el proyecto, npm run tsc -- --init (-- duplicado implica la intencion de que el parametro init 
+    le llegue a tsc y no a npm run ).
+
+3 : npm install express -E
+
+4 : Instalamos un paquete para evitar bajar serv cada actualizacion (que escuche los cambios) ej nodemon.
+    npm install ts-node-dev -D
