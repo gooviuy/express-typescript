@@ -1,5 +1,5 @@
 import { NewDiaryEntry } from "./types";
-import { Weather, Visibility } from "./enumbs";
+import { Weather, Visibility } from "./enums";
 
 const parseComment = (commentFromRequest: any): string => {
   if (!isString(commentFromRequest)) {
